@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    RED.nodes.registerType('myocr',{
+        category: 'test',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:''},
+			paddleocr: {value:'', required: true, type: 'string'}
+        },
+		
+        inputs: 1,
+        outputs: 1,
+		
+        icon: 'file.png',
+        label: function() {
+            return this.name||"PaddleOCR-json";
+        },
+        oneditsave: function() {
+            this.paddleocr = $("#node-input-paddleocr").val;
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="myocr">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="PaddleOCR-json" />
+    </div>
+	<div class="form-row">
+        <label for="node-input-paddleocr"><i class="fa fa-tag"></i>PaddleOCR-json</label>
+        <input type="text" id="node-input-paddleocr" placeholder="PaddleOCR-json.exe" style="width:70%" />
+    </div>
+</script>
+
+<script type="text/html" data-help-name="myocr">
+    <p>A simple node that recognizes and extracts characters by utilizing PaddleOCR-json.exe</p>
+	<p>Users must configure the full path or absolute path of the locally installed Paddleocr-json.exe firstly and correctly</p>
+</script>

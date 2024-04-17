@@ -1,0 +1,23 @@
+{
+  "name": "myocr",
+  "version": "1.0.0",
+  "description": "OCR utilizing PaddleOCR-json",
+  "main": "myocr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PaddleOCR"
+  ],
+  "author": "yrming@gmail.com",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "myocr": "myocr.js"
+    }
+  },
+  "dependencies": {
+    "paddleocrjson": "^1.1.1",
+    "tmp": "^0.2.3"
+  }
+}
