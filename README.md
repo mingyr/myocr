@@ -2,11 +2,11 @@
 This is the prototypical node demonstrating how to leverage PaddleOCR-json to extract text from captured image
 
 ## Prerequisite
-**1. Node-RED **
+1. Node-RED
 It is suggested you install the latest Node-RED in order to use this node. Although this node might be naive due to lack of reference of implementation of Node-RED custom node, it should be compatible with the latest Node-RED version.
-**2. PaddleOCR-json **
+2. PaddleOCR-json
 You have to install (download and unpack) the latest PaddleOCR-json package (link is here: *https://github.com/hiroi-sora/PaddleOCR-json*), and configure the directory of it in the node editor.
-**3. PaddleOCR-json Node.js binding **
+3. PaddleOCR-json Node.js binding
 At the same time, you have to install the accompanying Node.js binding language in order to interact with the PaddleOCR-json executable.
 
 ## Installation
